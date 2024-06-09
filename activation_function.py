@@ -42,11 +42,11 @@ def print_result(x, name):
             r = ReLU(float(x))
             e = ELU(float(x))
             if name == "sigmoid":
-                print ("f({f1}) = {f2}".format(f1 = x, f2 = s))
+                print("f({f1}) = {f2}".format(f1 = x, f2 = s))
             elif name == "ReLU":
-                print ("f({f1}) = {f2}".format(f1 = x, f2 = r))
+                print("f({f1}) = {f2}".format(f1 = x, f2 = r))
             else:
-                print ("f({f1}) = {f2}".format(f1 = x, f2 = e))
+                print("f({f1}) = {f2}".format(f1 = x, f2 = e))
 if __name__ == "__main__":
     x = input("x = ")
     name = input("activation function (sigmoid|relu|elu): ")
